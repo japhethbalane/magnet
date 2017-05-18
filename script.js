@@ -27,18 +27,7 @@ function init() {
 
 window.addEventListener('resize', init); 
 
-window.addEventListener("mousemove", handleMouseMove);
-window.addEventListener("touchmove", handleMouseMove);
-
-function rBetween(min, max) {
-	return parseInt(min + Math.random() * max);
-}
-
-function randColor() {
-	return 'rgb('+rBetween(240,255)+','+rBetween(240,255)+','+rBetween(1,255)+')';
-}
-
-function handleMouseMove(e) {
+window.addEventListener("mousemove", function(e) {
 	var angles , diffx, diffy;
 
 	for (var pin of pins) {
@@ -54,4 +43,12 @@ function handleMouseMove(e) {
 
 		pin.style.transform = 'rotate('+angle+'deg)';
 	}
+});
+
+function rBetween(min, max) {
+	return parseInt(min + Math.random() * max);
+}
+
+function randColor() {
+	return 'rgb('+rBetween(240,255)+','+rBetween(240,255)+','+rBetween(1,255)+')';
 }
