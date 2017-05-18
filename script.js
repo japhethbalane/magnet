@@ -28,7 +28,7 @@ function init() {
 window.addEventListener('resize', init); 
 
 window.addEventListener("mousemove", handleMouseMove);
-window.addEventListener("touchstart", handleMouseMove);
+window.addEventListener("touchmove", handleMouseMove);
 
 function rBetween(min, max) {
 	return parseInt(min + Math.random() * max);
