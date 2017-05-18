@@ -38,7 +38,7 @@ function randColor() {
 	return 'rgb('+rBetween(240,255)+','+rBetween(240,255)+','+rBetween(1,255)+')';
 }
 
-function handleMouseMove() {
+function handleMouseMove(e) {
 	var angles , diffx, diffy;
 
 	for (var pin of pins) {
