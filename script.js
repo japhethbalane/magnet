@@ -50,5 +50,6 @@ function rBetween(min, max) {
 }
 
 function randColor() {
-	return 'rgb('+rBetween(240,255)+','+rBetween(240,255)+','+rBetween(1,255)+')';
+	return 'rgb('+rBetween(230,255)+','+rBetween(230,255)+','+rBetween(1,155)+')';
+	return 'rgb(255,100,100)';
 }
